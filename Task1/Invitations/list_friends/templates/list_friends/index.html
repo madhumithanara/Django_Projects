@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invite them!</title>
+</head>
+<body>
+
+        <h1> People to invite sorted based on user_id</h1>
+        {% for person in invited%}
+        <h2> {{person.user_id}} {{ person.name }} {{person.distance}}km</h2>
+        {% endfor %}
+</body>
+</html>

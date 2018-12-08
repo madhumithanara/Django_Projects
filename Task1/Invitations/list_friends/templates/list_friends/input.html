@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taking parameters</title>
+</head>
+
+<h1> Please enter latitude, longitude and the distance in km separated by a space.</h1>
+
+<form method="POST" action="result">
+{% csrf_token %}
+<input type="text" name="textfield">
+
+<button type="submit">Who do I invite?</button>
+</form>
