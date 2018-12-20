@@ -14,6 +14,8 @@ Use the plus button on the right-hand corner to add new applicants.
 
 How to run:
 
+python manage.py makemigrations basicform
+
 python manage.py migrate
 
 python manage.py runserver
