@@ -1,0 +1,14 @@
+{% extends 'basicform/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <h1>{{ post.name }}</h1>
+        <p>{{ post.email }}</p>
+        <p>{{ post.phone }}</p>
+        <p>Why me?</p>
+        <p>{{ post.whyme }}</p>
+        <p>Ideas</p>
+        <p>{{ post.ideas }}</p>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}

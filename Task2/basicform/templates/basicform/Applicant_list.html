@@ -1,0 +1,11 @@
+{% extends 'basicform/base.html' %}
+
+{% block content %}
+        {% for post in posts %}
+            <div>
+                <h1><a href="{% url 'Applicant_detail' pk=post.pk %}">{{ post.name }}</a></h1>
+                <p>{{ post.email }}</p>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+{% endblock %}
